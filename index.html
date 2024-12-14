@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Eyear App by Kamal Sir</title>
+<style>
+*{font-size:40px;font-family:Arial;}
+body{background-color:lightblue;}
+</style>
+</head>
+<body>
+<center>
+<h1>Languages App</h1>
+<form onsubmit="show()">
+<label for="name">Enter Name</label>
+<input type="text"   id="name"     placeholder="enter your name" />
+<br/><br/>
+<label for="year">Select Engg Year </label>
+<select id="year">
+<option value="fe">FE</option>
+<option value="se">SE</option>
+<option value="te">TE</option>
+<option value="be">BE</option>
+</select>
+<br/><br/>
+<input type="submit"/>
+</form>
+<h2 id="msg"/>
+<script>
+function show()
+{
+event.preventDefault();
+let name=document.getElementById("name");
+let year=document.getElementById("year");
+let msg=document.getElementById("msg");
+let n=name.value;
+let y=year.value;
+if(n.trim()==="")
+{
+alert("please enter name");
+msg.innerHTML="";
+name.focus();
+return;
+}
+if(!n.match("^[A-Za-z]+$"))
+{
+alert("name shud contain only alphabets");
+msg.innerHTML="";
+name.focus();
+return;
+}
+let a="name="+n+"year="+y;
+msg.innerHTML=a;
+}
+</script>
+</center>
+</body>
+</html>
