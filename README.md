@@ -18,6 +18,15 @@ Amazon incurs significant operational costs, customer refunds, and delivery asso
 
 ---
 
+
+
+### Power BI dashboard 
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b65a216-c51e-4132-bcd1-0cb721e9482f" />
+
+
 ## 🚀 Project Workflow
 
 ### 1. Data Engineering & Simulation
